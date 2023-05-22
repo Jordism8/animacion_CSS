@@ -1,0 +1,53 @@
+
+    .mario {
+      width: 400px;
+      height: 587px;
+      background-image: url('mario.png');
+      left: 400px;
+      top: 520px;
+      position: absolute;
+    }
+
+    .bomba {
+      width: 129px;
+      height: 124px;
+      background-image: url('bomba.png');
+      left: 1500px;
+      top: 790px;
+      position: absolute;
+    }
+
+    .mapa {
+      width: 2000px;
+      height: 958px;
+      background-image: url('fondo1reducido.gif');
+      x : 0px;
+      y : 0px;
+      position: absolute;
+    }
+
+    @keyframes correr {
+    0% {
+      background-position : 0px;
+    }
+    100% {
+      background-position: -1600px;
+    }
+  }
+
+  @keyframes correr2 {
+  0% {
+    background-position : 0px;
+  }
+  100% {
+    background-position: -254px;
+  }
+}
+
+  .mario {
+    animation: correr 2s steps(4) infinite;
+  }
+
+  .bomba {
+    animation: correr2 2s steps(2) infinite;
+  }
